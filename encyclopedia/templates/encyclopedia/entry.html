@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }} - Encyclopedia</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <div>
+        {{ content|safe }}
+    </div>
+    <p>
+        <a href="{% url 'edit_entry' title=title %}">Edit this entry</a>
+    </p>
+</body>
+</html>
